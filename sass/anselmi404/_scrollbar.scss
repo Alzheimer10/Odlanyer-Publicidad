@@ -1,0 +1,47 @@
+/*
+ * style scrollbar core
+*/
+
+*{
+  &::-webkit-scrollbar {
+    overflow: hidden;
+    width: $scrollbar-width;
+    background: $scrollbar-bg;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+  &::-webkit-scrollbar-piece {
+    background: rgba(0, 0, 0, .2);
+  }
+  &::-webkit-scrollbar-thumb {
+    overflow: hidden;
+    border-radius: $scrollbar-border-radius;
+    background: $scrollbar-btn-bg;
+  }
+  &::-webkit-scrollbar-corner {
+    overflow: hidden;
+    background: rgba(0, 0, 0, .4);
+  }
+
+  &::-moz-scrollbar {
+    overflow: hidden;
+    width: $scrollbar-width;
+    background: $scrollbar-bg;
+  }
+  &::-moz-scrollbar-button {
+   display:none;
+  }
+  &::-moz-scrollbar-piece {
+    background: rgba(0, 0, 0, .2);
+  }
+  &::-moz-scrollbar-thumb {
+    overflow: hidden;
+    border-radius: $scrollbar-border-radius;
+    background: $scrollbar-btn-bg;
+  }
+  &::-moz-scrollbar-corner {
+    overflow: hidden;
+    background: rgba(0, 0, 0, .5);
+  }
+}

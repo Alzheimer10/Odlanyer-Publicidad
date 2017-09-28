@@ -1,0 +1,27 @@
+/*!
+ * ANSELMI404 (http://anselmi404.com.ve)
+ * Copyright 2017-2018.
+ * Licensed under MIT (https://github.com/Alzheimer10/base-template/blob/master/LICENSE)
+ */
+
+// Core variables, functions, and mixins
+@import "anselmi404/variables";
+@import "anselmi404/functions";
+@import "anselmi404/mix";
+
+// Reset and dependencies
+
+// Core CSS
+@import "anselmi404/initial";
+@import "anselmi404/shadow";
+@import "anselmi404/highlight";
+@import "anselmi404/scrollbar";
+@import "anselmi404/selection";
+@import "anselmi404/helper";
+
+// Components
+@import "anselmi404/footer";
+
+// Components w/ JavaScript
+@import "anselmi404/loaders";
+@import "anselmi404/gototop";

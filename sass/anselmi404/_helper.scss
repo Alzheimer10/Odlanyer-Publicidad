@@ -1,0 +1,52 @@
+/* =============
+   Helper clasess
+============= */
+
+/* PADDING */
+.p-0 {
+  padding: 0px !important;
+}
+.p-l-0 {
+  padding-left: 0px !important;
+}
+.p-r-0 {
+  padding-right: 0px !important;
+}
+.p-t-0 {
+  padding-top: 0px !important;
+}
+.p-b-0 {
+  padding-bottom: 0px !important;
+}
+/* MARGIN */
+.m-0 {
+  margin: 0px !important;
+}
+.m-r-0 {
+  margin-right: 0px !important;
+}
+.m-l-0 {
+  margin-left: 0px !important;
+}
+.m-t-0 {
+  margin-top: 0px !important;
+}
+.m-b-0 {
+  margin-bottom: 0px !important;
+}
+/* MARGIN & BOTTOM */
+.m-p-0{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* display */
+.display-block{
+  display: block;
+}
+.display-initial{
+  display: initial;
+}
+.display-inline{
+display: inline;
+}

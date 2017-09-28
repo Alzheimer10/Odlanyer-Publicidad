@@ -1,0 +1,31 @@
+/*
+ * highlight core
+ * <span class="highlight"></span>
+ */
+
+.highlight {
+    background-color: $highlight-bg;
+    color: $highlight-color;
+    padding: 0 8px;
+    @include border-radius(2px);
+}
+
+.highlight-bottom-1 {
+	border-bottom: 1px solid $highlight-bg;
+}
+.highlight-bottom-2 {
+	border-bottom: 1px solid $highlight-bg;
+}
+.highlight-bottom-3 {
+	border-bottom: 1px solid $highlight-bg;
+}
+
+.highlight-top-1 {
+	border-top: 1px solid $highlight-bg;
+}
+.highlight-top-2 {
+	border-top: 1px solid $highlight-bg;
+}
+.highlight-top-3 {
+	border-top: 1px solid $highlight-bg;
+}

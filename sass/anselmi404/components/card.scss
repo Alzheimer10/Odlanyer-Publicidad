@@ -1,0 +1,209 @@
+/*
+* cards
+*
+*/
+
+$max-height-card: auto;
+$padding-info-card: 10px;
+$bg-primary-card: #dc3c3c;
+$color-primary-hover-card: #dc3c3c;
+
+/* card (0) */
+	.card-0{
+		& .content-card{
+			position: relative;
+			margin-bottom: 20px;
+			overflow: hidden;
+			& .info-card{
+				max-height: $max-height-card;
+				padding: $padding-info-card;
+				padding-bottom: 0px;
+				overflow: hidden;
+				 -ms-word-break: break-all;
+				     word-break: break-all;
+				     word-break: break-word;
+
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				    -ms-hyphens: auto;
+				        hyphens: auto;				
+				& h2{
+					background-color: $bg-primary-card;
+					color: white;
+				}
+				& h2,
+				& p{
+					overflow: hidden;
+					margin: 0px;
+				}
+			}
+			& .read-more-card{
+				padding: 0px 5px;
+				margin-bottom: 5px;
+				& a:hover i:before{
+					content: "\f100";
+					color: $color-primary-hover-card;
+				}
+			}
+		}
+	}
+
+/* card (1) */
+	.card-1{
+		& .content-card{
+			position: relative;
+			margin-bottom: 20px;
+			& img{
+				width: 100%;
+			}
+			& .info-card{
+				max-height: $max-height-card;
+				padding: $padding-info-card;
+				padding-bottom: 0px;
+				overflow: hidden;
+				 -ms-word-break: break-all;
+				     word-break: break-all;
+				     word-break: break-word;
+
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				    -ms-hyphens: auto;
+				        hyphens: auto;				
+				& h1,
+				& p{
+					overflow: hidden;
+					margin: 0px;
+				}
+			}
+			& .read-more-card{
+				padding: 0px 5px;
+				margin: 0px;
+				& a:hover i:before{
+					content: "\f100";
+				}
+			}
+		}
+	}
+
+/* card (2) */
+	.card-2{
+		& .content-card{
+			position: relative;
+			margin-bottom: 20px;
+			overflow: hidden;
+			& .content-img-card{
+				background-color: gray;
+				overflow: hidden;
+			}
+			& .content-img-card img{
+			  -moz-transition: all 0.6s;
+			  -webkit-transition: all 0.6s;
+			  transition: all 0.6s;
+			}
+			&:hover .content-img-card img{
+			  -moz-transform: scale(1.5) rotate(7deg);
+			  -webkit-transform: scale(1.5) rotate(7deg);
+			  transform: scale(1.5) rotate(7deg);
+				&.img-hover-gray{
+					-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			    	filter: grayscale(100%);
+				}
+			   
+			}
+			& .info-card{
+				max-height: $max-height-card;
+				padding: $padding-info-card;
+				padding-bottom: 0px;
+				overflow: hidden;
+				 -ms-word-break: break-all;
+				     word-break: break-all;
+				     word-break: break-word;
+
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				    -ms-hyphens: auto;
+				        hyphens: auto;				
+				& h1,
+				& p{
+					overflow: hidden;
+					margin: 0px;
+				}
+			}
+			& .read-more-card{
+				padding: 0px 5px;
+				margin-bottom: 5px;
+				& a:hover i:before{
+					content: "\f100";
+				}
+			}
+		}
+	}
+
+/* card (3) 
+* VAR
+*/
+	$max-height-card-3: 200px;
+
+	.card-3{
+		& .content-card{
+			position: relative;
+			margin-bottom: 20px;
+			overflow: hidden;
+			height: $max-height-card-3;
+
+			& .content-img-card{
+				background-color: gray;
+				overflow: hidden;
+				width: 40%;
+				float: left;
+			}
+			& .content-img-card img{
+			  -moz-transition: all 0.6s;
+			  -webkit-transition: all 0.6s;
+			  transition: all 0.6s;
+			  height: 100%;
+			}
+			&:hover .content-img-card img{
+			  -moz-transform: scale(1.5) rotate(7deg);
+			  -webkit-transform: scale(1.5) rotate(7deg);
+			  transform: scale(1.5) rotate(7deg);
+				&.img-hover-gray{
+					-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			    	filter: grayscale(100%);
+				}
+			   
+			}
+			& .info-card{
+				width: 60%;
+				float: right;
+				position: relative;
+				max-height: $max-height-card;
+				padding: $padding-info-card;
+				padding-bottom: 0px;
+
+				overflow: hidden;
+				 -ms-word-break: break-all;
+				     word-break: break-all;
+				     word-break: break-word;
+
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				    -ms-hyphens: auto;
+				        hyphens: auto;				
+				& h2,
+				& p{
+					overflow: hidden;
+					margin: 0px;
+				}
+				& .read-more-card{
+					padding: 0px 5px;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					& a:hover i:before{
+						content: "\f100";
+					}
+				}
+			}
+		}
+	}

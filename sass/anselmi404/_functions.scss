@@ -1,0 +1,11 @@
+/*!
+ * function
+ */
+
+@function font-path($font-url) {
+  @return #{$font-path}#{$font-url};
+}
+
+@function image-path($image-url) {
+  @return #{$image-path}#{$image-url};
+}
