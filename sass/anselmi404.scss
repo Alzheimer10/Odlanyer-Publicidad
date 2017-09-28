@@ -17,10 +17,12 @@
 @import "anselmi404/highlight";
 @import "anselmi404/scrollbar";
 @import "anselmi404/selection";
+@import "anselmi404/link_effects";
 @import "anselmi404/helper";
 
 // Components
-@import "anselmi404/footer";
+@import "anselmi404/sections/footer";
+@import "anselmi404/sections/navbar";
 
 // Components w/ JavaScript
 @import "anselmi404/loaders";

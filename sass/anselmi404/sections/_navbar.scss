@@ -1,0 +1,33 @@
+nav.navbar{
+	border-radius: 0px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 100;
+	& .container-fluid{
+		& .navbar-header{
+			padding-left: 10px;
+		}
+	    @media screen and (min-width: $screen-sm){
+			    padding-right: 0px;
+		}
+	}
+    @media screen and (max-width: $screen-sm){
+		/* background-color: white; */
+	}
+}
+
+.navbar-toggle{
+	background-color: #005a9d;
+	& .icon-bar {
+    	background-color: #fff;
+	}
+}
+
+.navbar-brand{
+    	padding: 5px 0px;
+}

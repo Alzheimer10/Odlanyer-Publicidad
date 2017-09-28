@@ -1,5 +1,9 @@
+var parallax_window = function(){
+	$('.parallax-window').parallax();
+},
+
 // Loading page
-var loaderPage = function() {
+loaderPage = function() {
 	$(window).load(function(){
 		$('body').removeClass('ac-scroll-loader');
 		$(".ac-loader").fadeOut("slow");
@@ -16,6 +20,6 @@ goToTop = function() {
 	});
 };
 
-
+$('#header').css("height",$(window).height()/1.5+'px');
 loaderPage();
 goToTop();

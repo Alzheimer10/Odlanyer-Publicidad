@@ -54,8 +54,8 @@ $bg-loaders:			$color-black;
 $color-loaders:			$color-primary;
 
 /* gotop */
-$gotop-color:			$color-black;
-$gotop-color-hover:			$color-white;
+$gotop-color:			$color-white;
+$gotop-color-hover:		$color-white;
 $gotop-bg:				$color-secondary;
 $gotop-bg-hover:		darken($color-secondary,10%);
 
@@ -72,6 +72,12 @@ $scrollbar-bg:			rgba(0, 0, 0, .2);
 $scrollbar-btn-bg:		$color-red;
 $scrollbar-border-radius:0px;
 $scrollbar-width:		15px;
+
+/* link_effects */
+$color-link-effects:			$color-black;
+$color-link-effects-hover:		$color-black;
+$bg-link-effects:				$color-secondary;
+
 
 $screen-xs:        		480px !default;
 $screen-xs-min:    		$screen-xs !default;
