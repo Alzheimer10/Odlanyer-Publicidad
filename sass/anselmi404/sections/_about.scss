@@ -1,0 +1,53 @@
+#about{
+	background: url(../img/arrangement-2264812_1920.jpg);
+	position: relative;
+	& .row .content-title{
+		background: orange;
+	}
+
+	& .content-about{
+		position: relative;
+		padding: 45px 15px;
+		& h1{
+			display: initial;
+			color: white;
+			float: left;
+			background: rgba(17, 90, 154, 1);
+			padding: 20px;
+			text-align: right;
+			margin: 0px;
+			position: relative;
+			z-index: 1;
+			margin-right: 10px;
+			font-size: 4rem;
+			@media screen and (min-width: $screen-sm) {
+			    margin-left: -30px;
+			}
+			@media screen and (min-width: $screen-md) {
+			    margin-left: -60px;
+			}
+		}
+
+		& p{
+		    padding: 10px;
+		    font-weight: 500;
+		    font-size: 15px;
+		    position: relative;
+		    z-index: 1;
+		    color: white;
+			text-align:justify;
+		}
+	}
+	&::before{
+	    position: absolute;
+	    content: "";
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(17, 90, 154, 0.78);
+	    top: 0;
+	    left: 0;
+	    z-index: 0;
+	    display: inline;
+	}
+
+}

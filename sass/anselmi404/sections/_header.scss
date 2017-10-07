@@ -1,0 +1,26 @@
+#header{
+	& h1.title-header{
+		text-align: left;
+		color: white;
+		text-shadow: 1px 1px #6f6f6f;
+		text-transform: uppercase;
+		margin-left: 20px;
+		position: relative;
+		&::before{
+			content: "";
+		    width: 22px;
+		    top: -1px;
+		    left: -20px;
+		    height: calc(100% + 1px);
+		    position: absolute;
+		    background: #005a9d;
+		    @media screen and (max-width: $screen-sm ) {
+		    	display: none;
+		    }
+		}
+		& > span{
+		    background: rgb(0, 90, 157);
+		        font-size: 2rem;
+		}
+	}
+}

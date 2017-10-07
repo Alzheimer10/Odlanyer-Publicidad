@@ -33,6 +33,7 @@ $color-primary: 		#db962b !default;
 $color-primary-hover: 	orange !default;
 $color-secondary:		#115a9a; 
 $color-secondary-hover: #4575a4; 
+$color-tertiary:		#d1d1b1; 
 $bg-body: 				$color-white;
 $font-size-body:		20px;
 
@@ -46,12 +47,12 @@ $color-a-hover:			$color-black;
 
 /* footer */
 $footer-height:			100px;
-$footer-color:			$color-font-primary;
-$footer-bg:				$color-primary;
+$footer-color:			$color-gray;
+$footer-bg:				$color-tertiary;
 
 /* _loaders */
-$bg-loaders:			$color-black;
-$color-loaders:			$color-primary;
+$bg-loaders:			$color-white;
+$color-loaders:			$color-secondary;
 
 /* gotop */
 $gotop-color:			$color-white;
@@ -69,15 +70,20 @@ $selection-color:		$color-white;
 
 /* scrollbar */
 $scrollbar-bg:			rgba(0, 0, 0, .2);
-$scrollbar-btn-bg:		$color-red;
+$scrollbar-btn-bg:		$color-secondary;
 $scrollbar-border-radius:0px;
-$scrollbar-width:		15px;
+$scrollbar-width:		10px;
 
 /* link_effects */
 $color-link-effects:			$color-black;
 $color-link-effects-hover:		$color-black;
 $bg-link-effects:				$color-secondary;
 
+//BLOG-CARD
+$color-blog-card-description: $color-white;
+$bg-blog-card: #503494;
+$bg-blog-card-l: #503494;
+$bg-blog-card-r: #503494;
 
 $screen-xs:        		480px !default;
 $screen-xs-min:    		$screen-xs !default;

@@ -1,0 +1,103 @@
+.service{
+	margin-bottom: 20px;
+	position: relative;
+	&::before{
+		content: "";
+		width: 60%;
+		height: 2px;
+		background-color: black;
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
+	&::after{
+		content: "";
+		width: 50%;
+		height: 2px;
+		background-color: black;
+		position: absolute;
+		bottom: -5px;
+		right: 0;
+	}
+	& h1{
+		display: inline;
+	    float: left;
+	    margin-top: 0px;
+	    margin-right: 22px;
+	}
+	& p{
+		display: inline;
+	}
+}
+
+.img-{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	margin-bottom: 40px; 
+	@media screen and (max-width: 425px) {
+		height: 150px;
+	}
+}
+
+.content-service{
+	min-height: 310px;
+}
+
+.title-service{
+	width: 90%;
+	background: rgba(0, 90, 157, 0.82);
+	margin-top: -50px; 
+	position: absolute;
+	bottom: -30px;
+	left: 5%;
+	right: 5%;
+	text-align: left;
+	text-align: left;
+	padding: 0px 10px;
+	overflow: hidden;
+	& h2{
+		position: relative;
+		color: white;
+	}
+	& h2::before{
+		content: "";
+	    width: 20%;
+	    background: white;
+	    height: 1px;
+	    top: -3px;
+	    left: 0px;
+	    position: absolute;
+	}
+	& h2::after{
+		content: "";
+	    width: 25%;
+	    background: white;
+	    height: 1px;
+	    bottom: -3px;
+	    left: 0px;
+	    position: absolute;
+	}
+}
+
+#services [class*="col-"]{
+	margin-bottom: 20px;
+	& p{
+		padding: 0px 10px 0px 10px !important;
+		margin: 0px;
+		text-align: justify;
+	}
+	@media screen and (max-width: 425px) {
+		padding: 2px;
+	}
+}
+
+
+#vitavalora{
+	& .ul-valores li{
+		display: inline;
+		&::after{
+			content: ",";
+		}
+	}
+}

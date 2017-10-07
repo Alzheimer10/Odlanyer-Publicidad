@@ -1,0 +1,62 @@
+#contact{
+	background-image: url(../img/arrangement-2264812_1920.jpg);
+	padding-top: 100px;
+	padding-bottom: 0px;
+	position: relative;
+	&::before{
+	    content: "";
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(#d1d1b1, 0.5);
+	    z-index: 9;
+	    position: absolute;
+	    display: block;
+	    top: 0;
+	    left: 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 30px 100px;
+	}
+
+	@media screen and (max-width: 425px) {
+		padding: 33px 10px;
+	}
+	& .box-contact::after{
+	    content: "";
+	    position: absolute;
+	    width: 100%;
+	    bottom: 0;
+	    left: 0;
+	    height: 50px;
+	    z-index: 9;
+	    background: $color-tertiary;
+	}
+}
+
+#form-contact{
+	background: rgba(255, 255, 255, 0.70);
+	padding: 20px;
+	z-index: 10;
+	@include box-shadow(0px 2px 4px 0px rgba(0, 0, 0, 0.47));
+	&::before{
+		content: "CONTÁCTANOS";
+	    position: absolute;
+	    top: -17px;
+	    left: 0;
+	    right: 0;
+	    background: $color-tertiary;
+	    padding: 10px;
+	    width: 50%;
+	    color: black;
+	    margin: auto;
+	    font-size: 2rem;
+	    text-align: center;
+		@media screen and (max-width: 768px) { 
+			width: 90%;
+		}
+	}
+}
+label{
+	font-weight: 500
+}

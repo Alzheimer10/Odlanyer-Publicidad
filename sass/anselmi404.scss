@@ -19,11 +19,37 @@
 @import "anselmi404/selection";
 @import "anselmi404/link_effects";
 @import "anselmi404/helper";
+@import "anselmi404/blog-card.scss";
 
 // Components
-@import "anselmi404/sections/footer";
+@import "anselmi404/sections/header";
 @import "anselmi404/sections/navbar";
+@import "anselmi404/sections/footer";
+@import "anselmi404/sections/about";
+@import "anselmi404/sections/contact";
+@import "anselmi404/sections/services";
+@import "anselmi404/sections/companys";
 
 // Components w/ JavaScript
 @import "anselmi404/loaders";
 @import "anselmi404/gototop";
+
+@media screen and (max-width: 425px){
+	html{
+		font-size: 12px;
+	}
+}
+@media screen and (min-width: 425px){
+	html{
+		font-size: 14px;
+	}
+}
+
+.wrapper > .container-fluid,
+.wrapper > .container{
+	margin-top: 100px;
+}
+
+.btn-primary{
+	border-radius: 0px;
+}

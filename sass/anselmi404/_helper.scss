@@ -63,3 +63,20 @@ display: inline;
   vertical-align: middle;
   position: relative;
 }
+
+.align-justify{
+  text-align: justify;
+}
+
+.width-sm-50{
+  @media screen and (min-width: $screen-sm){
+    float: left;
+    width: 50%;
+  }
+}
+
+.tabulacion{
+    width: 1rem;
+    height: 1px;
+    float: left;
+}

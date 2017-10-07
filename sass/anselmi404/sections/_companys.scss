@@ -1,0 +1,19 @@
+.company .item{
+    float: left;
+    width: calc(100%/9);
+    padding: 10px;
+}
+.company .item img{
+	width: 100%;
+	filter: grayscale(100%);
+	opacity: 0.8;
+}
+.company .item img:hover{
+	filter: grayscale(0%);
+	opacity: 1;
+}
+@media screen and (max-width: 590px) {
+	.company .item{
+    	width: calc(100%/5);
+	}
+}
