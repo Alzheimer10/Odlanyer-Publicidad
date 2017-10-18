@@ -22,7 +22,6 @@ goToTop = function() {
 
 
 contactForm = function(){
-	console.log($("form").serialize());
 	$('form').submit(function( event ) {
 	  	event.preventDefault();
 		$.ajax({
@@ -32,9 +31,10 @@ contactForm = function(){
 	    	success: function(data){
 	    		document.getElementById("form-contact").reset();
 	    		console.log(data);
+	    		alertify.success('Mensaje Enviado');
 	    	},
 			error: function(data) {
-	    		document.getElementById("form-contact").reset();
+				alertify.error('Error al enviar el correo');
 	    		console.log('error');
 			}
 		});

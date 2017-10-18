@@ -8,4 +8,5 @@
 	$headers = "From: ".$_POST['email'];
  
 	mail($to, $subject, $message, $headers);
+	return 1;
 ?>
