@@ -3,8 +3,9 @@
 // 	$time=$_POST['name'];
 // }
 	$to = "carlosanselmi2@gmail.com";
-	$subject = "Asunto del email";
-	$message = "Este es mi primer envío de email con PHP";
-	 
-	mail($to, $subject, $message);
+	$subject = isset($_POST['subject'];
+	$message = isset($_POST['message'];
+	$headers = "From: carlosanselmi3@hotmail.com";
+ 
+	mail($to, $subject, $message, $headers);
 ?>
