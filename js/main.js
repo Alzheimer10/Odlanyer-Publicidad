@@ -41,9 +41,12 @@ contactForm = function(){
 	});
 }
 
+/* PRUEBA DEL NOTIFITER
 $('.box-contact').on('click', function(){
+	alertify.set('notifier','position', 'top-right');
 	alertify.notify('sample', 'success', 55, function(){  console.log('dismissed'); });
 });
+*/
 
 $('#header').css("height",$(window).height()/1.5+'px');
 loaderPage();
