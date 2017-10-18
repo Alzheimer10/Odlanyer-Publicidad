@@ -31,7 +31,8 @@ contactForm = function(){
 	    	success: function(data){
 	    		document.getElementById("form-contact").reset();
 	    		console.log(data);
-	    		alertify.success('Mensaje Enviado');
+				alertify.set('notifier','position', 'top-right');
+				alertify.notify('Mensaje Enviado', 'success', 55, function(){  console.log('dismissed'); });
 	    	},
 			error: function(data) {
 				alertify.error('Error al enviar el correo');
