@@ -41,6 +41,10 @@ contactForm = function(){
 	});
 }
 
+$('.box-contact').on('click', function(){
+	alertify.notify('sample', 'success', 55, function(){  console.log('dismissed'); });
+});
+
 $('#header').css("height",$(window).height()/1.5+'px');
 loaderPage();
 goToTop();
