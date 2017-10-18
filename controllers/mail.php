@@ -3,9 +3,9 @@
 // 	$time=$_POST['name'];
 // }
 	$to = "carlosanselmi2@gmail.com";
-	$subject = isset($_POST['subject'];
-	$message = isset($_POST['message'];
-	$headers = "From: carlosanselmi3@hotmail.com";
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
+	$headers = "From: ".$_POST['email'];
  
 	mail($to, $subject, $message, $headers);
 ?>
