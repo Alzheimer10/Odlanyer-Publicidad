@@ -42,6 +42,41 @@ footer{
 	}
 }
 
-.footer-top span {
+.footer-top{
+	position: relative;
+
+	& span {
     color: #282528 !important;
+	}
+
+	& .social{
+	    position: absolute;
+	    left: 0;
+	    top: 13px;
+	    z-index: 1;
+	    @media screen and (max-width: $screen-sm) {
+		    top: -32px;
+		    z-index: 20;
+	    }
+	}
+	& .social li a{
+		color: #282528;
+	}
+	& .social li a:hover i{
+		transform: rotate(5deg) scale(1.4);
+	}
+	& .social li{
+	    background: #d1d1b1;
+	    border-radius: 22px;
+	    padding: 4px;
+	    float: left;
+	    margin-right: 20px;
+	}
+	& .social li:last-child{
+	    margin-right: 0px;
+	}
+	& .social li i{
+		transform: rotate(-5deg) scale(1.2);
+	}
 }
+

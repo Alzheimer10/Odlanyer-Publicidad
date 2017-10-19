@@ -60,27 +60,3 @@
 label{
 	font-weight: 500
 }
-
-.social{
-	position: absolute;
-	bottom: -20px;
-	left: 0;
-}
-.social li a{
-	color: #282528;
-}
-.social li a:hover i{
-	transform: rotate(5deg) scale(1.4);
-}
-.social li{
-    background: #d1d1b1;
-    border-radius: 22px;
-    padding: 4px;
-    float: left;
-}
-.social li:nth-child(1){
-    margin-right: 20px;
-}
-.social li i{
-	transform: rotate(-5deg) scale(1.2);
-}

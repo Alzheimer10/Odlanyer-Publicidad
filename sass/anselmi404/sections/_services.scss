@@ -39,6 +39,9 @@
 		height: 150px;
 	}
 }
+.img-.img-lg{
+	height: 400px;
+}
 
 .content-service{
 	min-height: 310px;
@@ -94,6 +97,7 @@
 
 
 #vitavalora{
+	margin-top: 100px;
 	& .ul-valores li{
 		display: inline;
 		&::after{
