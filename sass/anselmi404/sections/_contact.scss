@@ -61,9 +61,11 @@ label{
 
 div{
 	& .social{
-	    display: inline-block;
-	    float: left;
-		padding: 0px;
+	    padding: 0px;
+	    text-align: center;
+	    margin: auto;
+	    display: table;
+		margin-bottom: 20px;
 	    @media screen and (max-width: $screen-sm) {
 
 	    }
@@ -94,7 +96,13 @@ div{
 	& a{
 		color: #282528 !important;	
 	}
-
+	& a{
+		position: relative;
+		& i{
+		    position: absolute;
+		    left: -18px;
+		}
+	}
 	& a:hover p i{
 		transform: rotate(15reg);
 	}
