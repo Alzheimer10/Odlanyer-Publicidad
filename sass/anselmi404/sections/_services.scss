@@ -1,6 +1,7 @@
 .service{
 	margin-bottom: 20px;
 	position: relative;
+	overflow: hidden;
 	&::before{
 		content: "";
 		width: 60%;

@@ -14,8 +14,10 @@ body{
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
-	@if variable-exists(footer-height) {
-		margin-bottom: $footer-height;
+	@if $footer-absolute{
+		@if variable-exists(footer-height) {
+			margin-bottom: $footer-height;
+		}
 	}
 }
 

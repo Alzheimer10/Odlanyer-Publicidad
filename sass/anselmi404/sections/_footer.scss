@@ -4,10 +4,14 @@
 footer{
 	color: white;
 	width: 100%;
-    padding: 6px;
-    height: $footer-height; 
-    position: absolute;
-    bottom: 0;
+    @if $footer-absolute{
+    	padding: 6px;
+	    height: $footer-height; 
+	    position: absolute;
+	    bottom: 0;
+    }
+
+
     background-color: $footer-bg;
 
 	& h1,& h2,& h3,& h4,& h5,& h6,& .h1,& .h2,& .h3,& .h4,& .h5,& .h6,& p,& a,& span {
@@ -32,10 +36,12 @@ footer{
 	    width: 100%;
 	    background: #282528;
 	    color: white;
-	    padding: 10px 0px;
-	    position: absolute;
-	    left: 0;
-	    bottom: 0;
+	    padding: 10px 10px;
+	    @if $footer-absolute{
+	    	position: absolute;
+	    	left: 0;
+	    	bottom: 0;
+	    }
 		& a{
 			color: $footer-color;
 		}
@@ -47,36 +53,6 @@ footer{
 
 	& span {
     color: #282528 !important;
-	}
-
-	& .social{
-	    position: absolute;
-	    left: 0;
-	    top: 13px;
-	    z-index: 1;
-	    @media screen and (max-width: $screen-sm) {
-		    top: -32px;
-		    z-index: 20;
-	    }
-	}
-	& .social li a{
-		color: #282528;
-	}
-	& .social li a:hover i{
-		transform: rotate(5deg) scale(1.4);
-	}
-	& .social li{
-	    background: #d1d1b1;
-	    border-radius: 22px;
-	    padding: 4px;
-	    float: left;
-	    margin-right: 20px;
-	}
-	& .social li:last-child{
-	    margin-right: 0px;
-	}
-	& .social li i{
-		transform: rotate(-5deg) scale(1.2);
 	}
 }
 
